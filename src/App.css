@@ -1,38 +1,106 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
+  text-align: flex-start;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 35px
+}
+
+body {
+  background-image: linear-gradient(rgb(226, 255, 222), rgb(255, 255, 255) 70% );
+  height: 100vh; /* Fills the entire viewport height */
+  background-attachment: fixed;
+  --fx-cast: 2px 2px 2px #000000sbf;
+  --gaps: 18px;
+  --local-clr-bg: var(--clr-surface);
+  --local-clr-border: var(--clr-primary);
+  --local-clr-title-bg: var(--clr-primary-light);
+  --local-clr-title-ink: var(--clr-primary);
+}
+
+.masthead{
+  padding: 5,10;
+  box-shadow: var(--fx-cast);
+  background-image: url(https://files.scatter.art/remilia-ico/sky.webp);
+  background-position: 50%;
+  background-size: cover;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 420px;
+  height: 240px;
+}
+
+
+.box-header h2 {
   color: white;
+  margin: 0 auto;  /* Added margin: 0 auto */
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.box-header {
+  background-color: black;
+  color: white;  /* Text color for the heading */
+  padding: 0px;  /* Optional padding for the heading */
+  text-align: center;  /* Centers the heading text */
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#hook{
+  width: 500px;
+  height:750px;
+  background-color: rgb(234, 233, 205);
+  box-shadow: var(--fx-cast);
+
+}
+
+.box {
+  background-color: #f5f5dc;
+  padding: 0px 0px 0px 0px; /* Top and side padding, no bottom padding */
+  box-shadow: var(--fx-cast);
+  width:500px;
+  text-align: center;
+  margin:50px
+}
+
+h2 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0; /* Top and bottom padding, no side padding */
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 0;
+}
+
+i{
+  padding:10px;
+}
+
+.inner-pad{
+  margin:10px;
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.icon-list{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px
+}
+
+.icon-box{
+  width:250px;
+  height:200px;
+  text-align: center;
 }
