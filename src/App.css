@@ -23,7 +23,7 @@ body {
 
 .masthead{
   padding: 5,10;
-  box-shadow: var(--fx-cast);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
   background-image: url(https://files.scatter.art/remilia-ico/sky.webp);
   background-position: 50%;
   background-size: cover;
@@ -62,7 +62,7 @@ body {
 .box {
   background-color: #f5f5dc;
   padding: 0px 0px 0px 0px; /* Top and side padding, no bottom padding */
-  box-shadow: var(--fx-cast);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7); /* Offset, spread, blur, color */
   width:500px;
   text-align: center;
   margin:50px
