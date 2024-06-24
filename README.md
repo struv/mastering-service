@@ -1,6 +1,6 @@
-# Hello
-A website to advertise my music mastering services
+## This is
+a website to advertise my music mastering services
 
-## To Run
+### To Run
 npm install
 npm run start
